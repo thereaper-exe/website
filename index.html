@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoClean - Клининговая компания</title>
+    <!-- Подключение Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body { font-family: 'TS REmarker', sans-serif; font-size: 21px}
+        @font-face { 
+            font-family: "TS REmarker"; 
+            src: url("font/Vitaliy\ Tsygankov\ -\ TS\ Remarker\ Regular\ 2.otf")
+        }
+    </style>
+</head>
+<body class="bg-[#1B1A17] text-[#F8F8F8]">
+
+    <!-- Header -->
+    <header class="fixed w-full top-0 left-0 bg-gradient-to-r from-[#2D2C28] to-[#1B1A17] shadow-md py-4 px-6 sm:px-10 flex justify-between items-center z-50">
+        <div class="text-3xl font-bold text-[#A67C52]">EcoClean</div>
+        <nav>
+            <ul class="hidden md:flex gap-8 text-lg">
+                <li><a href="#" class="hover:text-[#D4A375] transition">Главная</a></li>
+                <li><a href="#about" class="hover:text-[#D4A375] transition">О нас</a></li>
+                <li><a href="#services" class="hover:text-[#D4A375] transition">Услуги</a></li>
+                <li><a href="#contact" class="hover:text-[#D4A375] transition">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="h-screen flex flex-col items-center justify-center text-center bg-cover bg-center relative bg-[url('/images/photo.png')]">
+        <div class="absolute inset-0 bg-[#1B1A17] opacity-70"></div>
+        <h2 class="relative text-5xl font-bold text-white drop-shadow-lg px-6">Профессиональная уборка для вашего дома и офиса</h2>
+        <p class="relative mt-4 text-xl px-4">Чистота и комфорт без лишних забот</p>
+        <a href="#contact" class="relative mt-8 px-8 py-3 bg-[#A67C52] text-[#1B1A17] font-bold rounded-full shadow-lg hover:bg-[#D4A375] transition">Заказать уборку</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 sm:px-10 text-center bg-[#2D2C28]">
+        <h2 class="text-4xl font-bold text-[#A67C52]">О нас</h2>
+        <p class="mt-4 text-lg">Мы - команда профессионалов, обеспечивающих чистоту и уют в вашем доме или офисе.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-[#1B1A17] text-center">
+        <h2 class="text-4xl font-bold text-[#A67C52]">Наши услуги</h2>
+        <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
+            <div class="bg-[#2D2C28] p-8 rounded-xl shadow-md transform transition hover:scale-105">
+                <i class="fas fa-broom text-[#A67C52] text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold">Генеральная уборка</h3>
+            </div>
+            <div class="bg-[#2D2C28] p-8 rounded-xl shadow-md transform transition hover:scale-105">
+                <i class="fas fa-spray-can text-[#A67C52] text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold">Поддерживающая уборка</h3>
+            </div>
+            <div class="bg-[#2D2C28] p-8 rounded-xl shadow-md transform transition hover:scale-105">
+                <i class="fas fa-window-maximize text-[#A67C52] text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold">Мойка окон</h3>
+            </div>
+            <div class="bg-[#2D2C28] p-8 rounded-xl shadow-md transform transition hover:scale-105">
+                <i class="fas fa-couch text-[#A67C52] text-4xl mb-4"></i>
+                <h3 class="text-xl font-semibold">Химчистка мебели</h3>
+            </div>
+        </div>
+    </section>
+
+		<!-- Gallery Section -->
+<section id="gallery" class="py-20 px-6 sm:px-10 bg-[#1B1A17]">
+    <h2 class="text-4xl font-bold text-[#A67C52] text-center">Наши работы</h2>
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <img src="./images/office.png" alt="Уборка офиса" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+        </div>
+        <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <img src="./images/home.png" alt="Чистый дом" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+        </div>
+        <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <img src="./images/window.jpg" alt="Мытье окон" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+        </div>
+        <div class="relative overflow-hidden rounded-lg shadow-lg">
+            <img src="./images/chistka.jpg" alt="Химчистка мебели" class="w-full h-64 object-cover transition-transform duration-300 hover:scale-110">
+        </div>
+    </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 text-center bg-[#2D2C28]">
+        <h2 class="text-4xl font-bold text-[#A67C52]">Контакты</h2>
+        <p class="mt-4">Свяжитесь с нами по телефону: +7 (777) 424-15-94</p>
+        <p>Email: info@ecoclean.kz</p>
+        <form class="mt-8 flex flex-col gap-4 max-w-md mx-auto">
+            <input type="text" placeholder="Ваше имя" class="px-4 py-2 rounded-lg bg-[#3A3833] text-white focus:ring-2 focus:ring-[#A67C52]">
+            <input type="email" placeholder="Ваш Email" class="px-4 py-2 rounded-lg bg-[#3A3833] text-white focus:ring-2 focus:ring-[#A67C52]">
+            <textarea placeholder="Ваше сообщение" class="px-4 py-2 rounded-lg bg-[#3A3833] text-white focus:ring-2 focus:ring-[#A67C52]"></textarea>
+            <button type="submit" class="py-2 bg-[#A67C52] text-[#1B1A17] font-bold rounded-full hover:bg-[#D4A375] transition">Отправить</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-[#1B1A17] text-center text-[#A67C52]">
+        <p>&copy; 2025 EcoClean. Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
